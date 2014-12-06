@@ -1,7 +1,5 @@
 _missionVehiclesAndObjects = vehicles;
 _numberOfObjects = count _missionVehiclesAndObjects;
-//y u no arma 2?!?!?! arma 2 has 666 and women yay
-//y u do arma 3?!?!?
 countVar = 0;
 while {countVar < _numberOfObjects} do {
 	_vehicle = (_missionVehiclesAndObjects select countVar);
