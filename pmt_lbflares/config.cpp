@@ -14,7 +14,23 @@ class CfgPatches
 	};
 };
 
-class Extended_PostInit_EventHandlers
+class Extended_Init_EventHandlers
 {
-	pmt_flare_post_init = "pmt_flare_post_init_variable = [] execVM ""pmt_lbflares\pmt_flareinit.sqf""";
+    class B_Heli_Light_01_armed_F
+    {
+        jani_customLB_init = "_this spawn jani_fnc_customLB_init";
+    };
+};
+class CfgFunctions
+{
+    class Jani
+    {
+        class customLB
+        {
+            class customLB_init
+            {
+                file = "jani_customlb\jani_customlbinit.sqf";
+            };
+        };
+    };
 };
