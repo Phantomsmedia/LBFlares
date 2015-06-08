@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class pmt_lbflares
+	class jni_lbflares
 	{
 		units[] = {};
 		weapons[] = {};
@@ -16,21 +16,7 @@ class CfgPatches
 
 class Extended_Init_EventHandlers
 {
-    class B_Heli_Light_01_armed_F
-    {
-        jani_customLB_init = "_this spawn jani_fnc_customLB_init";
-    };
-};
-class CfgFunctions
-{
-    class Jani
-    {
-        class customLB
-        {
-            class customLB_init
-            {
-                file = "jani_customlb\jani_customlbinit.sqf";
-            };
-        };
-    };
+    class B_Heli_Light_01_armed_F {
+		jani_lbflares_init = "(_this select 0) addweaponglobal "CMFlareLauncher"; (_this select 0) addmagazineglobal "120Rnd_CMFlare_Chaff_Magazine";" };
+	};
 };
