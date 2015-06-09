@@ -17,6 +17,6 @@ class CfgPatches
 class Extended_Init_EventHandlers
 {
     class B_Heli_Light_01_armed_F {
-		jani_lbflares_init = "(_this select 0) addweaponglobal "CMFlareLauncher"; (_this select 0) addmagazineglobal "120Rnd_CMFlare_Chaff_Magazine";" };
+		jani_lbflares_init = "(_this select 0) addweaponglobal 'CMFlareLauncher'; (_this select 0) addmagazineglobal '120Rnd_CMFlare_Chaff_Magazine';" };
 	};
 };
