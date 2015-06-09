@@ -14,9 +14,16 @@ class CfgPatches
 	};
 };
 
-class Extended_Init_EventHandlers
+class CfgVehicles
 {
-    class B_Heli_Light_01_armed_F {
-		init = "(_this select 0) addweaponglobal 'CMFlareLauncher'; (_this select 0) addmagazineglobal '120Rnd_CMFlare_Chaff_Magazine';" };
-	};
+    class Helicopter_Base_H;
+    class Heli_Light_01_base_F: Helicopter_Base_H {
+    
+    };
+    class Heli_Light_01_armed_base_F: Heli_Light_01_base_F {
+        
+		weapons[] += {"CMFlareLauncher"};
+		magazines[] += {"120Rnd_CMFlare_Chaff_Magazine"};
+		
+		};
 };
